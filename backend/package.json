@@ -4,9 +4,12 @@
   "main": "index.js",
   "scripts": {
     "dev": "tsx watch src/index.ts",
+    "migrate": "drizzle-kit migrate --config=src/drizzle.config.ts",
+    "generate": "drizzle-kit generate --config=src/drizzle.config.ts",
     "build": "tsc",
     "start": "node dist/index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
+     
   },
   "keywords": [],
   "author": "",
